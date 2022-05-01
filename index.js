@@ -49,7 +49,11 @@ async function run() {
             res.send({ accessToken });
         })
 
-
+        // testing route for heroku
+        app.get('/hero', (req, res)=>{
+            res.send('hero meets hero')
+        })
+        
         // Showing all data(services api)
         app.get('/service', async (req, res) => {
             const query = {};
