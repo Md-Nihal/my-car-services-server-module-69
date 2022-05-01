@@ -53,7 +53,7 @@ async function run() {
         app.get('/hero', (req, res)=>{
             res.send('hero meets hero')
         })
-        
+
         // Showing all data(services api)
         app.get('/service', async (req, res) => {
             const query = {};
